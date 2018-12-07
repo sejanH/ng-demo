@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;margin: 0;
+}
+.navbar {
+    border-radius: 0px;margin-bottom: 0px;
+}
+
+div.container-fluid {
+    padding: 0;margin: 0;
+} 
+ .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+}
+div.container-fluid > div.row {
+    margin: 0 !important;padding: 0 !important;
+}
+div.row > * {
+    margin: 0 !important;padding: 0 !important;
+}
+
+/* Sidebar */
+.sidebar{
+    /* max-width: 200px; */
+    background-color: grey;
+    word-wrap: break-word;
+    height: 100vh;
+    padding: 0;    
+    display: inline-block;
+}

@@ -1,0 +1,12 @@
+/* Sidebar */
+ul.sidebar{
+    list-style: none;width: 100%;
+}
+li.sidebar-el{
+    padding: 3px 5px; 
+    color: aliceblue;font-weight: 600;
+    border-bottom: 1px solid lightgray;
+}
+li.sidebar-el > span{
+    font-size: 26px;
+}
