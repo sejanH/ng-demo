@@ -1,12 +1,35 @@
 /* Sidebar */
 ul.sidebar{
-    list-style: none;width: 100%;
+    list-style: none;width: 100%;margin-top: 0px;display: block;
 }
 li.sidebar-el{
     padding: 3px 5px; 
     color: aliceblue;font-weight: 600;
     border-bottom: 1px solid lightgray;
+    display: block;
 }
+li.sidebar-el:hover,
+li.sidebar-el:focus{
+    background-color: rgb(240, 249, 255);color: lightgrey;
+}
+li.sidebar-el > a{
+    text-decoration: none;display: block;
+}
+li.sidebar-el > a:focus,
+li.sidebar-el > a:hover{
+    color:black;
+}
+/* li.sidebar-el:first-child{
+    text-transform: capitalize;font-variant: small-caps;
+    position: fixed;z-index: 2;
+    background: rgb(105, 206, 236);color: aliceblue;font-weight: 600;
+} */
 li.sidebar-el > span{
-    font-size: 26px;
+    font-size: 24px;
+}
+h4.nav-title{
+    padding:4px;margin-top:0;display: block;
+    line-height: 30px;
+     z-index: 2;background: rgb(105, 206, 236);
+    text-transform: capitalize;font-variant: small-caps;
 }
