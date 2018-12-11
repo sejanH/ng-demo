@@ -10,20 +10,22 @@ li.sidebar-el{
 }
 li.sidebar-el:hover,
 li.sidebar-el:focus{
-    background-color: rgb(240, 249, 255);color: lightgrey;
+    background-color: rgba(117, 216, 255,0.6);color: lightgrey;
+    transition: 0.8s;
 }
 li.sidebar-el > a{
     text-decoration: none;display: block;
 }
+li.sidebar-el > a{
+    font-size: 1.75rem;
+    display: block;
+    color: antiquewhite;
+}
 li.sidebar-el > a:focus,
 li.sidebar-el > a:hover{
-    color:black;
+    color: rgb(255, 255, 255);
 }
-/* li.sidebar-el:first-child{
-    text-transform: capitalize;font-variant: small-caps;
-    position: fixed;z-index: 2;
-    background: rgb(105, 206, 236);color: aliceblue;font-weight: 600;
-} */
+
 li.sidebar-el > span{
     font-size: 24px;
 }
