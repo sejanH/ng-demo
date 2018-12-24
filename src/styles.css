@@ -29,3 +29,11 @@ div.row > * {
     padding: 0;    
     display: inline-block;
 }
+
+/* Mainbody */
+.mainbody{
+    word-wrap: break-word;
+    height: 100vh;
+    padding: 0;    
+    display: inline-block;
+}
