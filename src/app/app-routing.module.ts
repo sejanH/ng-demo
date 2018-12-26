@@ -6,13 +6,26 @@ import { DetailsComponent } from './details/details.component';
 
 const routes: Routes = [
   {
-    path:'',
-    component:PostsComponent
+    path:'', redirectTo:'home', pathMatch:'full'
+  }
+  ,{
+    path:'home',
+    component: PostsComponent
   },
   {
-    path:'post/:id',
-    component: DetailsComponent
+    path:'posts',
+    component: PostsComponent,
+    children:[
+      {
+        path:'post/:id',
+        component: DetailsComponent
+      }
+    ]
   },
+  // {
+  //   path:'post/:id',
+  //   component: DetailsComponent
+  // },
   {
     path:'users',
     component: UsersComponent

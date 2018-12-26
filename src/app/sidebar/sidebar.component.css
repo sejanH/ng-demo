@@ -1,4 +1,5 @@
 /* Sidebar */
+
 ul.sidebar{
     list-style: none;width: 100%;margin-top: 0px;display: block;
 }
@@ -10,7 +11,7 @@ li.sidebar-el{
 }
 li.sidebar-el:hover,
 li.sidebar-el:focus{
-    background-color: rgba(117, 216, 255,0.6);color: lightgrey;
+    background-color: rgba(52, 53, 53, 0.651);color: ghostwhite;
     transition: 0.8s;
 }
 li.sidebar-el > a{
@@ -19,15 +20,18 @@ li.sidebar-el > a{
 li.sidebar-el > a{
     font-size: 1.75rem;
     display: block;
-    color: antiquewhite;
+    color: ghostwhite;
 }
-li.sidebar-el > a:focus,
+/* li.sidebar-el > a:focus,
 li.sidebar-el > a:hover{
     color: rgb(255, 255, 255);
-}
+} */
 
 li.sidebar-el > span{
     font-size: 24px;
+}
+li.sidebar-el-active{
+    background-color: rgba(15, 15, 15, 0.493);
 }
 h4.nav-title{
     padding:4px;margin-top:0;display: block;

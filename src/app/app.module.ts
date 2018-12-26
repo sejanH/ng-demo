@@ -9,7 +9,9 @@ import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { AuthComponent } from './users/auth/auth.component';
+import { RegisterComponent } from './users/register/register.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HttpClientModule } from '@angular/common/http'
     PostsComponent,
     UsersComponent,
     DetailsComponent,
-    NavbarComponent
+    NavbarComponent,
+    AuthComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
