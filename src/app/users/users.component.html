@@ -1,8 +1,7 @@
 <h2>Users</h2>
-
 <ul class="list-group">
   <li *ngFor="let user of users$" class="list-group-item">
-    <a routerLink="/user/{{user.id}}" class="btn btn-link">
+    <a routerLink="./{{user.id}}" class="btn btn-link">
       {{ user.name }}
     </a>
     <ul class="list-group">
@@ -10,4 +9,4 @@
       <li class="list-group-item">{{ user.website }}</li>
     </ul>
   </li>
-</ul>
+</ul> 

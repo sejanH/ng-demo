@@ -3,37 +3,40 @@ import { Routes, RouterModule } from '@angular/router';
 import { PostsComponent } from './posts/posts.component';
 import { UsersComponent } from './users/users.component'; 
 import { DetailsComponent } from './details/details.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
-    path:'', redirectTo:'home', pathMatch:'full'
-  }
-  ,{
     path:'home',
-    component: PostsComponent
+    component: HomeComponent
   },
   {
     path:'posts',
     component: PostsComponent,
-    children:[
-      {
-        path:'post/:id',
-        component: DetailsComponent
-      }
-    ]
+    // children:[
+    //   { path:':id', component: DetailsComponent }
+    // ]
   },
-  // {
-  //   path:'post/:id',
-  //   component: DetailsComponent
-  // },
+  {
+    path:'posts/:id',
+    component: DetailsComponent
+  },
   {
     path:'users',
-    component: UsersComponent
+    component: UsersComponent,
+    children:[
+      {path:'', component: UsersComponent },
+      {path: ':id', component: DetailsComponent}
+    ]
   },
   {
-    path:'user/:id',
-    component: DetailsComponent
+    path:'', redirectTo:'home', pathMatch:'full'
   }
+
+  // {
+  //   path:'user/:id',
+  //   component: DetailsComponent
+  // }
 ];
 
 @NgModule({
@@ -41,3 +44,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+/*export const routingComponents*/
