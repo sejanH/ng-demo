@@ -12,7 +12,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthComponent } from './users/auth/auth.component';
 import { RegisterComponent } from './users/register/register.component';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { DemoComponent } from './demo/demo.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomeComponent } from './home/home.component'
     NavbarComponent,
     AuthComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,

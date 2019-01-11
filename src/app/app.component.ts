@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {Cors} from '../../node_modules/cors';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
